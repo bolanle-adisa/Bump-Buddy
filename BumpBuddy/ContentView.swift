@@ -8,17 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var authManager = AuthManager()
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        if authManager.isAuthenticated {
+            MainTabView()
+        } else {
+            LoginView(authManager: authManager)
         }
-        .padding()
     }
 }
 
-#Preview {
-    ContentView()
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }

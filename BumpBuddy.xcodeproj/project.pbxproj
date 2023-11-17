@@ -14,6 +14,16 @@
 		615C809A2B07CE89003CD118 /* BumpBuddyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615C80992B07CE89003CD118 /* BumpBuddyTests.swift */; };
 		615C80A42B07CE89003CD118 /* BumpBuddyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615C80A32B07CE89003CD118 /* BumpBuddyUITests.swift */; };
 		615C80A62B07CE89003CD118 /* BumpBuddyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615C80A52B07CE89003CD118 /* BumpBuddyUITestsLaunchTests.swift */; };
+		615C80B32B07CF8A003CD118 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615C80B22B07CF8A003CD118 /* SignUpView.swift */; };
+		615C80B72B07D06C003CD118 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615C80B62B07D06C003CD118 /* LoginView.swift */; };
+		615C80B92B07D509003CD118 /* PregnancyTrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615C80B82B07D509003CD118 /* PregnancyTrackerView.swift */; };
+		615C80BB2B07D52A003CD118 /* HealthInsightsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615C80BA2B07D52A003CD118 /* HealthInsightsView.swift */; };
+		615C80BD2B07D53E003CD118 /* AppointmentSchedulerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615C80BC2B07D53E003CD118 /* AppointmentSchedulerView.swift */; };
+		615C80BF2B07D556003CD118 /* DueDateEstimatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615C80BE2B07D556003CD118 /* DueDateEstimatorView.swift */; };
+		615C80C12B07D566003CD118 /* WeeklyMotivationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615C80C02B07D566003CD118 /* WeeklyMotivationView.swift */; };
+		615C80C32B07D579003CD118 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615C80C22B07D579003CD118 /* ProfileView.swift */; };
+		615C80C52B07D6CA003CD118 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615C80C42B07D6CA003CD118 /* AuthManager.swift */; };
+		615C80C72B07D722003CD118 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615C80C62B07D722003CD118 /* MainTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +54,16 @@
 		615C809F2B07CE89003CD118 /* BumpBuddyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BumpBuddyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		615C80A32B07CE89003CD118 /* BumpBuddyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BumpBuddyUITests.swift; sourceTree = "<group>"; };
 		615C80A52B07CE89003CD118 /* BumpBuddyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BumpBuddyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		615C80B22B07CF8A003CD118 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		615C80B62B07D06C003CD118 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		615C80B82B07D509003CD118 /* PregnancyTrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PregnancyTrackerView.swift; sourceTree = "<group>"; };
+		615C80BA2B07D52A003CD118 /* HealthInsightsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthInsightsView.swift; sourceTree = "<group>"; };
+		615C80BC2B07D53E003CD118 /* AppointmentSchedulerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentSchedulerView.swift; sourceTree = "<group>"; };
+		615C80BE2B07D556003CD118 /* DueDateEstimatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DueDateEstimatorView.swift; sourceTree = "<group>"; };
+		615C80C02B07D566003CD118 /* WeeklyMotivationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyMotivationView.swift; sourceTree = "<group>"; };
+		615C80C22B07D579003CD118 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		615C80C42B07D6CA003CD118 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		615C80C62B07D722003CD118 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +116,16 @@
 			children = (
 				615C80882B07CE87003CD118 /* BumpBuddyApp.swift */,
 				615C808A2B07CE87003CD118 /* ContentView.swift */,
+				615C80C42B07D6CA003CD118 /* AuthManager.swift */,
+				615C80C62B07D722003CD118 /* MainTabView.swift */,
+				615C80C22B07D579003CD118 /* ProfileView.swift */,
+				615C80C02B07D566003CD118 /* WeeklyMotivationView.swift */,
+				615C80BE2B07D556003CD118 /* DueDateEstimatorView.swift */,
+				615C80BC2B07D53E003CD118 /* AppointmentSchedulerView.swift */,
+				615C80BA2B07D52A003CD118 /* HealthInsightsView.swift */,
+				615C80B82B07D509003CD118 /* PregnancyTrackerView.swift */,
+				615C80B22B07CF8A003CD118 /* SignUpView.swift */,
+				615C80B62B07D06C003CD118 /* LoginView.swift */,
 				615C808C2B07CE89003CD118 /* Assets.xcassets */,
 				615C808E2B07CE89003CD118 /* Preview Content */,
 			);
@@ -258,7 +288,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				615C808B2B07CE87003CD118 /* ContentView.swift in Sources */,
+				615C80B32B07CF8A003CD118 /* SignUpView.swift in Sources */,
+				615C80C32B07D579003CD118 /* ProfileView.swift in Sources */,
+				615C80C12B07D566003CD118 /* WeeklyMotivationView.swift in Sources */,
+				615C80BD2B07D53E003CD118 /* AppointmentSchedulerView.swift in Sources */,
+				615C80B92B07D509003CD118 /* PregnancyTrackerView.swift in Sources */,
+				615C80BF2B07D556003CD118 /* DueDateEstimatorView.swift in Sources */,
+				615C80BB2B07D52A003CD118 /* HealthInsightsView.swift in Sources */,
+				615C80C52B07D6CA003CD118 /* AuthManager.swift in Sources */,
+				615C80B72B07D06C003CD118 /* LoginView.swift in Sources */,
 				615C80892B07CE87003CD118 /* BumpBuddyApp.swift in Sources */,
+				615C80C72B07D722003CD118 /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
