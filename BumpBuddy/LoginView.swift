@@ -17,7 +17,7 @@ struct LoginView: View {
             NavigationView {
                 ZStack {
                     // Background image as the bottom layer
-                    Image("mumappbackground") // Replace with your image name
+                    Image("mumappbackground2") // Replace with your image name
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                         .frame(minWidth: 0, maxWidth: .infinity)
@@ -28,7 +28,6 @@ struct LoginView: View {
                                                 .font(.largeTitle)
                                                 .padding(.top,50)
                                                 .foregroundColor(.white)
-                        
                                                 .shadow(color: .black, radius: 5)
 
                     TextField("Username", text: $username)
