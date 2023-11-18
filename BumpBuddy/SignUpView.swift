@@ -17,46 +17,65 @@ struct SignUpView: View {
 
     var body: some View {
         NavigationView {
-            VStack(spacing: 20) {
-                TextField("Name", text: $name)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding(.horizontal)
+            ZStack {
+                // Background image as the bottom layer
+                Image("mumappbackground2") // Replace with your image name
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(minWidth: 0, maxWidth: .infinity)
+                    .edgesIgnoringSafeArea(.all)
 
-                TextField("Username", text: $username)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding(.horizontal)
-
-                TextField("Email", text: $email)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding(.horizontal)
-
-                SecureField("Password", text: $password)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding(.horizontal)
-
-                SecureField("Confirm Password", text: $confirmPassword)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding(.horizontal)
-
-                Button(action: signUpUser) {
-                    Text("Sign Up")
-                        .frame(minWidth: 0, maxWidth: .infinity)
-                        .padding()
+                VStack(spacing: 20) {
+                    Text("Create an Account")
+                        .font(.largeTitle)
                         .foregroundColor(.white)
-                        .background(Color.blue)
-                        .cornerRadius(10)
+                        .shadow(color: .black, radius: 5)
+
+                    // TextFields and SecureFields
+                    TextField("Name", text: $name)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .padding(.horizontal)
+
+                    TextField("Username", text: $username)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .padding(.horizontal)
+
+                    TextField("Email", text: $email)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .padding(.horizontal)
+
+                    SecureField("Password", text: $password)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .padding(.horizontal)
+
+                    SecureField("Confirm Password", text: $confirmPassword)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .padding(.horizontal)
+
+                    Button(action: signUpUser) {
+                        Text("Sign Up")
+                            .frame(minWidth: 0, maxWidth: .infinity)
+                            .padding()
+                            .foregroundColor(.white)
+                            .background(Color.blue)
+                            .cornerRadius(10)
+                    }
+                    .padding(.horizontal)
                 }
-                .padding(.horizontal)
+                .padding()
             }
-            .navigationBarTitle("Create an Account", displayMode: .inline)
-            .padding()
+//            .navigationBarTitle("Create an Account", displayMode: .inline)
+//            .foregroundColor(.white)
+//            .shadow(color: .black, radius: 5)
         }
+        .edgesIgnoringSafeArea(.all) // Ensuring the NavigationView covers the entire screen
     }
 
     private func signUpUser() {
         // Implement sign-up logic
         // On successful sign-up, update the AuthManager
         authManager.isAuthenticated = true
+        // Further actions or navigation can be implemented here
     }
 }
 
