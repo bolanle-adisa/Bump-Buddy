@@ -23,7 +23,7 @@
 		6109FC492B0D430700999513 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6109FC482B0D430700999513 /* DatabaseManager.swift */; };
 		6109FC4B2B0D472900999513 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6109FC4A2B0D472900999513 /* SettingsView.swift */; };
 		6109FC4D2B0D483500999513 /* PrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6109FC4C2B0D483500999513 /* PrivacyView.swift */; };
-		6109FC4F2B0D4F6200999513 /* HealthInsightsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6109FC4E2B0D4F6200999513 /* HealthInsightsView.swift */; };
+		6109FC532B0D534C00999513 /* HealthInsightsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6109FC522B0D534C00999513 /* HealthInsightsView.swift */; };
 		615C80892B07CE87003CD118 /* BumpBuddyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615C80882B07CE87003CD118 /* BumpBuddyApp.swift */; };
 		615C808B2B07CE87003CD118 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615C808A2B07CE87003CD118 /* ContentView.swift */; };
 		615C808D2B07CE89003CD118 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 615C808C2B07CE89003CD118 /* Assets.xcassets */; };
@@ -70,7 +70,7 @@
 		6109FC482B0D430700999513 /* DatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		6109FC4A2B0D472900999513 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		6109FC4C2B0D483500999513 /* PrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyView.swift; sourceTree = "<group>"; };
-		6109FC4E2B0D4F6200999513 /* HealthInsightsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HealthInsightsView.swift; path = "../../../../Library/Messages/Attachments/97/07/F77E100C-32FA-4929-ABBC-43A8E74C2E75/HealthInsightsView.swift"; sourceTree = "<group>"; };
+		6109FC522B0D534C00999513 /* HealthInsightsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthInsightsView.swift; sourceTree = "<group>"; };
 		615C80852B07CE87003CD118 /* BumpBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BumpBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		615C80882B07CE87003CD118 /* BumpBuddyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BumpBuddyApp.swift; sourceTree = "<group>"; };
 		615C808A2B07CE87003CD118 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -153,8 +153,8 @@
 				615C80C62B07D722003CD118 /* MainTabView.swift */,
 				615C80C22B07D579003CD118 /* ProfileView.swift */,
 				6109FC4A2B0D472900999513 /* SettingsView.swift */,
-				6109FC4E2B0D4F6200999513 /* HealthInsightsView.swift */,
 				6109FC2F2B0D280200999513 /* UserProfileModel.swift */,
+				6109FC522B0D534C00999513 /* HealthInsightsView.swift */,
 				6109FC3E2B0D42C900999513 /* AppRouter.swift */,
 				6109FC442B0D42F400999513 /* BookingView.swift */,
 				6109FC422B0D42E900999513 /* Date+Ext.swift */,
@@ -341,7 +341,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6109FC4B2B0D472900999513 /* SettingsView.swift in Sources */,
-				6109FC4F2B0D4F6200999513 /* HealthInsightsView.swift in Sources */,
 				615C808B2B07CE87003CD118 /* ContentView.swift in Sources */,
 				6109FC412B0D42E100999513 /* DayView.swift in Sources */,
 				6109FC432B0D42E900999513 /* Date+Ext.swift in Sources */,
@@ -356,6 +355,7 @@
 				6109FC3F2B0D42C900999513 /* AppRouter.swift in Sources */,
 				6109FC492B0D430700999513 /* DatabaseManager.swift in Sources */,
 				6109FC4D2B0D483500999513 /* PrivacyView.swift in Sources */,
+				6109FC532B0D534C00999513 /* HealthInsightsView.swift in Sources */,
 				6109FC452B0D42F400999513 /* BookingView.swift in Sources */,
 				615C80C52B07D6CA003CD118 /* AuthManager.swift in Sources */,
 				615C80B72B07D06C003CD118 /* LoginView.swift in Sources */,
