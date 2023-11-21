@@ -42,9 +42,13 @@ struct ProfileView: View {
                         EditProfileView(userName: $userName)
                     }
 
-                    ProfileOption(title: "Settings", iconName: "gear")
-                    ProfileOption(title: "Privacy", iconName: "shield.lefthalf.fill")
-                    // Add more options as needed
+                    NavigationLink(destination: SettingsView()) {
+                                            ProfileOption(title: "Settings", iconName: "gear")
+                                        }
+                    NavigationLink(destination: PrivacyView()) {
+                        ProfileOption(title: "Privacy", iconName: "shield.lefthalf.fill")
+                        // Add more options as needed
+                    }
                 }
                 
                 Button(action: {
