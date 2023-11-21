@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct LoginView: View {
-    @ObservedObject var authManager: AuthManager
     @State private var username: String = ""
     @State private var password: String = ""
     @State private var isLoggingIn: Bool = false
+    @EnvironmentObject var authManager: AuthManager
 
     var body: some View {
             NavigationView {
@@ -81,6 +81,6 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView(authManager: AuthManager())
+        LoginView().environmentObject(AuthManager())
     }
 }

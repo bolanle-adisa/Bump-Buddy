@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MainTabView: View {
     @State private var showMotivation: Bool = false
+    @EnvironmentObject var authManager: AuthManager
 
     var body: some View {
         NavigationView {
@@ -53,6 +54,6 @@ struct MainTabView: View {
 
 struct MainTabView_Previews: PreviewProvider {
     static var previews: some View {
-        MainTabView()
+        MainTabView().environmentObject(AuthManager())
     }
 }

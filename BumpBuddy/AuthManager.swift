@@ -16,6 +16,7 @@ class AuthManager: ObservableObject {
     }
 
     func logout() {
+        isAuthenticated = false
         // Implement logout logic
         // Set isAuthenticated to false
     }

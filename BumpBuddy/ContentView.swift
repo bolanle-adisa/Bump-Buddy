@@ -8,19 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var authManager = AuthManager()
+    @EnvironmentObject var authManager: AuthManager
 
     var body: some View {
         if authManager.isAuthenticated {
             MainTabView()
         } else {
-            LoginView(authManager: authManager)
+            LoginView()
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().environmentObject(AuthManager())
     }
 }

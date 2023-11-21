@@ -86,6 +86,6 @@ struct DueDateEstimatorView: View {
 
 struct DueDateEstimatorView_Previews: PreviewProvider {
     static var previews: some View {
-        DueDateEstimatorView()
+        DueDateEstimatorView().environmentObject(AuthManager())
     }
 }
