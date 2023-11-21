@@ -8,51 +8,83 @@
 import SwiftUI
 
 struct ProfileView: View {
-    // Example user data - this would be fetched from a user model in a real app
     @State private var userName = "Emily Johnson"
     @State private var userEmail = "emily.johnson@example.com"
-    @EnvironmentObject var authManager: AuthManager // Corrected to use @EnvironmentObject
+    @State private var isEditProfilePresented = false
+    @EnvironmentObject var authManager: AuthManager
 
     var body: some View {
-        VStack {
-            Image(systemName: "person.crop.circle.fill")
-                .resizable()
-                .frame(width: 120, height: 120)
-                .padding(.top, 40)
-                .foregroundColor(.blue)
+        ScrollView {
+            VStack(alignment: .center, spacing: 20) {
+                Image(systemName: "person.crop.circle.fill")
+                    .resizable()
+                    .frame(width: 120, height: 120)
+                    .foregroundColor(.blue)
+                    .padding(.top, 40)
 
-            Text(userName)
-                .font(.title)
-                .fontWeight(.bold)
-                .padding(.top, 10)
+                Text(userName)
+                    .font(.title)
+                    .fontWeight(.bold)
 
-            Text(userEmail)
-                .font(.subheadline)
-                .foregroundColor(.gray)
+                Text(userEmail)
+                    .font(.subheadline)
+                    .foregroundColor(.gray)
+                    .padding(.bottom, 20)
 
-            Spacer()
+                // User options
+                Group {
+                    Button(action: {
+                        isEditProfilePresented = true
+                    }) {
+                        ProfileOption(title: "Edit Profile", iconName: "pencil")
+                    }
+                    .sheet(isPresented: $isEditProfilePresented) {
+                        EditProfileView(userName: $userName)
+                    }
 
-            Button(action: {
-                authManager.logout() // Action for logging out
-            }) {
-                Text("Log Out")
-                    .frame(minWidth: 0, maxWidth: .infinity)
-                    .padding()
-                    .foregroundColor(.white)
-                    .background(Color.red)
-                    .cornerRadius(10)
+                    ProfileOption(title: "Settings", iconName: "gear")
+                    ProfileOption(title: "Privacy", iconName: "shield.lefthalf.fill")
+                    // Add more options as needed
+                }
+                
+                Button(action: {
+                    authManager.logout() // Action for logging out
+                }) {
+                    Text("Log Out")
+                        .foregroundColor(.white)
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(Color.red)
+                        .cornerRadius(10)
+                }
+                .padding()
             }
-            .padding()
-
-            Spacer()
+            .padding(.horizontal)
         }
-        .padding(.horizontal)
         .navigationBarTitle("Profile", displayMode: .inline)
+    }
+
+    // Custom view for profile options
+    private func ProfileOption(title: String, iconName: String) -> some View {
+        HStack {
+            Image(systemName: iconName)
+                .foregroundColor(.blue)
+                .frame(width: 30, height: 30)
+            Text(title)
+                .foregroundColor(.black)
+            Spacer()
+            Image(systemName: "chevron.right")
+                .foregroundColor(.gray)
+        }
+        .padding()
+        .background(Color.white)
+        .cornerRadius(10)
+        .shadow(radius: 3)
     }
 }
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView().environmentObject(AuthManager()) // Updated for preview
+        ProfileView().environmentObject(AuthManager())
     }
 }
